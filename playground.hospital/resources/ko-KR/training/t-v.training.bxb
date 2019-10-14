@@ -1,0 +1,5 @@
+train (t-vkkpj2h4up25i42mufm98ootj) {
+  utterance ("[g:HospitalInfo] (대전)[v:City] (산부인과)[v:Part]")
+  plan (Y2BhUCjISaxML8ovzUvRy8gvLsgsSczR84AyPPPS8rGrcMvMS4GpYpDApsI5s6QSu0xAYlEJAzMDIwMTkGQA0iAIASA+WBQA)
+  last-modified (1570901093012)
+}

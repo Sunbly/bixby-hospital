@@ -1,0 +1,17 @@
+result-view {
+   match {
+     HospitalInfo (this)
+   }
+
+   message{
+     template ("result")
+   }
+
+   render {
+    layout-macro (result_details) {
+      param (HospitalInfo) {
+        expression (this)
+      }
+    }
+  }
+}

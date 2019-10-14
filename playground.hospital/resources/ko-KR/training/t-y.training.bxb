@@ -1,0 +1,5 @@
+train (t-yrcxwvu8x9sujrdb9xmpz84tg) {
+  utterance ("[g:HospitalInfo] (대전)[v:City] (안과)[v:Part]")
+  plan (Y2BhUCjISaxML8ovzUvRy8gvLsgsSczR84AyPPPS8rGrcMvMS4GpYpDApsI5s6QSu0xAYlEJAzMDIwMTkGQA0iAIASA+WBQA)
+  last-modified (1570901278677)
+}

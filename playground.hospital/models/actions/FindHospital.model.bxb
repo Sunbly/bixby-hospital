@@ -1,0 +1,29 @@
+action (FindHospital) {
+  description (해당지역의병원찾기)
+  type(Search)
+  collect {
+    input (city) {
+      type (City)
+      min (Optional) max (One)
+      default-init{
+        intent{
+          goal:FindHospital
+
+        }
+      }
+    }
+
+     input (part) {
+      type (Part)
+      min (Optional) max (One)
+      default-init{
+        intent{
+          goal:FindHospital
+
+        }
+      }
+    }
+  }
+// output (addrInfo)
+output (HospitalInfo)
+}
