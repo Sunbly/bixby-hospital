@@ -1,0 +1,31 @@
+structure (HospitalInfo_Point) {
+  description (병원의 정보(기본정보외 위도 경도) + 나의 위치)// + 병원 위치(위도, 경도) + 나의 위치(위도, 경도)
+  property (dutyName) {
+    type (DutyName)
+    min (Optional) max (One)
+  }
+  property (dutyDivNam) {
+    type (DutyDivNam)
+    min (Optional) max (One)
+  }
+  property (dutyAddr) {
+    type (DutyAddr)
+    min (Optional) max (One)
+  }
+  property (hospitalLocation){
+    type(HospitalLocation)
+    min (Optional) max (One)
+  }
+  property(currentLocation){
+    type(currentLocation)
+    min (Optional) max (One)
+  }
+  property (distance) {
+    type(distance)
+    min (Required)
+  }
+  property (mapAPI) {
+    type(mapAPI)
+    min (Required)
+  } 
+}

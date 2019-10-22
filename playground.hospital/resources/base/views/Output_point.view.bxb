@@ -1,0 +1,17 @@
+result-view {
+   match {
+     HospitalInfo_Point (this)
+   }
+
+   message{
+     template ("병원 찾기")
+   }
+
+   render {
+    layout-macro (result_details_point) {
+      param (HospitalInfo_Point) {
+        expression (this)
+      }
+    }
+  }
+}

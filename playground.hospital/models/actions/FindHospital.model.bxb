@@ -12,7 +12,6 @@ action (FindHospital) {
         }
       }
     }
-
      input (part) {
       type (Part)
       min (Optional) max (One)

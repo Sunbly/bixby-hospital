@@ -1,0 +1,4 @@
+structure (currentLocation) {
+  description (현재 위치)
+  role-of (geo.NamedPoint)
+}

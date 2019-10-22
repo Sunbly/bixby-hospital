@@ -1,0 +1,19 @@
+action (FindHospital_location) {
+  description (위치 정보 이용한 병원 조회)
+
+  collect {
+    input (currentLocation) {
+      type (currentLocation)
+      min (Required) max (One)
+      default-init{
+        intent{
+          goal : currentLocation
+          route : geo.CurrentLocation
+        }
+      }
+    }
+
+  }
+  type(Constructor)
+  output (HospitalInfo_Point)
+}

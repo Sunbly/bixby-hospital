@@ -1,0 +1,5 @@
+train (t-p9vnp59kkxmzfilaq1twm86d4) {
+  utterance ("[g:HospitalInfo] (서울)[v:City]")
+  plan (Y2BmUCjISaxML8ovzUvRy8gvLsgsSczR84AyPPPS8rGrcMvMS4GpYpDApsI5s6SSgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571466791464)
+}
