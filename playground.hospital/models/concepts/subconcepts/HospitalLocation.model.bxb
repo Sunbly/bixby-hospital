@@ -1,0 +1,4 @@
+structure (HospitalLocation) {
+  description (geo 캡슐의 NamedPoint)
+  role-of (geo.NamedPoint)
+}

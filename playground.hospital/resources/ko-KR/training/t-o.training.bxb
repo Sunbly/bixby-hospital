@@ -1,0 +1,5 @@
+train (t-oahl311erlmx1q3omrz737b8x) {
+  utterance ([g:HospitalInfo_Point] 주변 병원 보여줘)
+  plan (Y2BkUCvISaxML8ovzUvRy8gvLsgsSczR84AyPPPS8uMD8jPzShhAgBFEAAA=)
+  last-modified (1571654971229)
+}

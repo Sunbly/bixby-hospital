@@ -2,9 +2,13 @@ endpoints {
   action-endpoints {
 
      action-endpoint (FindHospital) {
-       accepted-inputs (city,part)
-       
+       accepted-inputs (city,part,point)
        local-endpoint (FindHospital.js)
+     }
+
+     action-endpoint (FindHospital_location){
+       accepted-inputs (currentLocation)
+       local-endpoint (FindHospital_location.js)
      }
   }
 }

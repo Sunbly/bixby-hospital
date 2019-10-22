@@ -1,0 +1,100 @@
+layout-macro-def(result_details_point) {
+  params {
+    param (HospitalInfo_Point) {
+      type (HospitalInfo_Point)
+      min (Required)
+      max (Many)
+    }
+  }
+
+  content {
+    section {  // this macro returns a "section"
+      content {
+        if(HospitalInfo_Point[0].dutyName == 'none'){
+          paragraph{
+            value{
+              template ("검색되는 병원이 없습니다.")
+            }
+            style(Title_M)
+          }
+        }
+        else{
+          map-card{
+          title-area{
+            slot1{
+              text{
+                value("#{value(HospitalInfo_Point[0].dutyName)}, 거리: #{value(HospitalInfo_Point[0].distance)}m")
+                style(Title_L)
+              }
+            }
+          }
+          on-click{
+            // 클릭시 실행 추가
+          }
+          markers{
+            marker{
+              geo (HospitalInfo_Point[0].hospitalLocation.point)
+              icon("/images/icons/placeholder.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+        }
+
+        map-card{
+          title-area{
+            slot1{
+              text{
+                value("#{value(HospitalInfo_Point[1].dutyName)}, 거리: #{value(HospitalInfo_Point[1].distance)}m")
+                style(Title_L)
+              }
+            }
+          }
+          on-click{
+            // 클릭시 실행 추가
+          }
+          markers{
+            marker{
+              geo (HospitalInfo_Point[1].hospitalLocation.point)
+              icon("/images/icons/placeholder.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+        }
+        
+        map-card{
+          title-area{
+            slot1{
+              text{
+                value("#{value(HospitalInfo_Point[2].dutyName)}, 거리: #{value(HospitalInfo_Point[2].distance)}m")
+                style(Title_L)
+              }
+            }
+          }
+          on-click{
+            // 클릭시 실행 추가
+          }
+          markers{
+            marker{
+              geo (HospitalInfo_Point[2].hospitalLocation.point)
+              icon("/images/icons/placeholder.png")
+              width (30)
+              height (30)
+              anchor-x (5)
+              anchor-y (15)
+              rotation (0)
+            }
+          }
+        }
+        }
+      }
+    }        
+  }
+}

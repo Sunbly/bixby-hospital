@@ -1,0 +1,37 @@
+layout-macro-def(result_details) {
+  params {
+    param (HospitalInfo) {
+      type (HospitalInfo)
+      min (Required)
+      max (Many)
+    }
+  }
+
+  content {
+    section {  // this macro returns a "section"
+      content {
+          paragraph {
+          value ("#{value(HospitalInfo[0].dutyName)} , #{value(HospitalInfo[0].dutyAddr)}, #{value(HospitalInfo[0].dutyDivNam)}")
+          style (Detail_M)
+        }
+         paragraph {
+          value ("#{value(HospitalInfo[1].dutyName)} , #{value(HospitalInfo[1].dutyAddr)}, #{value(HospitalInfo[1].dutyDivNam)}")
+          style (Detail_M)
+        }
+         paragraph {
+          value ("#{value(HospitalInfo[2].dutyName)} , #{value(HospitalInfo[2].dutyAddr)}, #{value(HospitalInfo[2].dutyDivNam)}")
+          style (Detail_M)
+        }
+         paragraph {
+          value ("#{value(HospitalInfo[3].dutyName)} , #{value(HospitalInfo[3].dutyAddr)}, #{value(HospitalInfo[3].dutyDivNam)}")
+          style (Detail_M)
+        }
+         paragraph {
+          value ("#{value(HospitalInfo[4].dutyName)} , #{value(HospitalInfo[4].dutyAddr)}, #{value(HospitalInfo[4].dutyDivNam)}")
+          style (Detail_M)
+        }
+
+      }
+    }        
+  }
+}
