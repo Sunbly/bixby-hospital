@@ -13,6 +13,7 @@ function getDistance(lat1,lon1,lat2,lon2) {
   const d = R * c; // Distance in km
   
   return parseInt(d*1000); // Distance in m
+  // return d.toFixed(1);
 }
 
 function deg2rad(deg) {
